@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Structure xmlns="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/message" xmlns:Structure="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/structure" xmlns:common="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/common" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/structure http://www.sdmx.org/docs/2_0/SDMXStructure.xsd http://www.SDMX.org/resources/SDMXML/schemas/v2_0/message http://www.sdmx.org/docs/2_0/SDMXMessage.xsd">
+  <Header>
+    <ID>282-0073 [footnote reference:7]</ID>
+    <Test>true</Test>
+    <Name xml:lang="en">Labour force survey estimates (LFS), wages of employees by job permanence, union coverage, sex and age group, unadjusted for seasonality</Name>
+    <Name xml:lang="fr">Enquête sur la population active (EPA), estimations du salaire des employés selon la permanence de l'emploi, la couverture syndicale, le sexe et le groupe d'âge, non désaisonnalisées</Name>
+    <Prepared>2015-02-05T15:52:13-05:00</Prepared>
+    <Sender id="STATCAN" />
+    <Receiver id="STATCAN" />
+  </Header>
+  <CodeLists>
+    <structure:CodeList xmlns:structure="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/structure" id="CL_GEOGRAPHY" version="1.0" isFinal="false">
+      <structure:Name xml:lang="en">Geography</structure:Name>
+      <structure:Name xml:lang="fr">Géographie</structure:Name>
+      <structure:Code value="1">
+        <structure:Description xml:lang="en">Canada</structure:Description>
+        <structure:Description xml:lang="fr">Canada</structure:Description>
+      </structure:Code>
+      <structure:Code value="2">
+        <structure:Description xml:lang="en">Newfoundland and Labrador</structure:Description>
+        <structure:Description xml:lang="fr">Terre-Neuve-et-Labrador</structure:Description>
+      </structure:Code>
+      <structure:Code value="3">
+        <structure:Description xml:lang="en">Prince Edward Island</structure:Description>
+        <structure:Description xml:lang="fr">Île-du-Prince-Édouard</structure:Description>
+      </structure:Code>
+      <structure:Code value="4">
+        <structure:Description xml:lang="en">Nova Scotia</structure:Description>
+        <structure:Description xml:lang="fr">Nouvelle-Écosse</structure:Description>
+      </structure:Code>
+      <structure:Code value="5">
+        <structure:Description xml:lang="en">New Brunswick</structure:Description>
+        <structure:Description xml:lang="fr">Nouveau-Brunswick</structure:Description>
+      </structure:Code>
+      <structure:Code value="6">
+        <structure:Description xml:lang="en">Quebec</structure:Description>
+        <structure:Description xml:lang="fr">Québec</structure:Description>
+      </structure:Code>
+      <structure:Code value="7">
+        <structure:Description xml:lang="en">Ontario</structure:Description>
+        <structure:Description xml:lang="fr">Ontario</structure:Description>
+      </structure:Code>
+      <structure:Code value="8">
+        <structure:Description xml:lang="en">Manitoba</structure:Description>
+        <structure:Description xml:lang="fr">Manitoba</structure:Description>
+      </structure:Code>
+      <structure:Code value="9">
+        <structure:Description xml:lang="en">Saskatchewan</structure:Description>
+        <structure:Description xml:lang="fr">Saskatchewan</structure:Description>
+      </structure:Code>
+      <structure:Code value="10">
+        <structure:Description xml:lang="en">Alberta</structure:Description>
+        <structure:Description xml:lang="fr">Alberta</structure:Description>
+      </structure:Code>
+      <structure:Code value="11">
+        <structure:Description xml:lang="en">British Columbia</structure:Description>
+        <structure:Description xml:lang="fr">Colombie-Britannique</structure:Description>
+      </structure:Code>
+    </structure:CodeList>
+    <structure:CodeList xmlns:structure="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/structure" id="CL_WAGES" version="1.0" isFinal="false">
+      <structure:Name xml:lang="en">Wages</structure:Name>
+      <structure:Name xml:lang="fr">Salaire</structure:Name>
+      <structure:Code value="1">
+        <structure:Description xml:lang="en">Total employees, all wages</structure:Description>
+        <structure:Description xml:lang="fr">Total des employés, tous les salaires</structure:Description>
+      </structure:Code>
+      <structure:Code value="2">
+        <structure:Description xml:lang="en">Average hourly wage rate</structure:Description>
+        <structure:Description xml:lang="fr">Salaire horaire moyen</structure:Description>
+      </structure:Code>
+      <structure:Code value="3">
+        <structure:Description xml:lang="en">Average weekly wage rate</structure:Description>
+        <structure:Description xml:lang="fr">Salaire hebdomadaire moyen</structure:Description>
+      </structure:Code>
+      <structure:Code value="4">
+        <structure:Description xml:lang="en">Median hourly wage rate</structure:Description>
+        <structure:Description xml:lang="fr">Salaire horaire médian</structure:Description>
+      </structure:Code>
+      <structure:Code value="5">
+        <structure:Description xml:lang="en">Median weekly wage rate</structure:Description>
+        <structure:Description xml:lang="fr">Salaire hebdomadaire médian</structure:Description>
+      </structure:Code>
+      <structure:Annotations>
+        <common:Annotation>
+          <common:AnnotationTitle>1</common:AnnotationTitle>
+          <common:AnnotationType>Footnote for Dimension</common:AnnotationType>
+        </common:Annotation>
+      </structure:Annotations>
+    </structure:CodeList>
+    <structure:CodeList xmlns:structure="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/structure" id="CL_JOBPERMANENCE" version="1.0" isFinal="false">
+      <structure:Name xml:lang="en">Job permanence</structure:Name>
+      <structure:Name xml:lang="fr">Permanence de l'emploi</structure:Name>
+      <structure:Code value="1">
+        <structure:Description xml:lang="en">Total employees, permanent and temporary</structure:Description>
+        <structure:Description xml:lang="fr">Total des employés, permanents et temporaires</structure:Description>
+      </structure:Code>
+      <structure:Code value="2">
+        <structure:Description xml:lang="en">Permanent employees</structure:Description>
+        <structure:Description xml:lang="fr">Employés permanents</structure:Description>
+        <structure:Annotations>
+          <common:Annotation>
+            <common:AnnotationTitle>3</common:AnnotationTitle>
+            <common:AnnotationType>Footnotes for Member</common:AnnotationType>
+          </common:Annotation>
+        </structure:Annotations>
+      </structure:Code>
+      <structure:Code value="3">
+        <structure:Description xml:lang="en">Temporary employees</structure:Description>
+        <structure:Description xml:lang="fr">Employés temporaires</structure:Description>
+        <structure:Annotations>
+          <common:Annotation>
+            <common:AnnotationTitle>4</common:AnnotationTitle>
+            <common:AnnotationType>Footnotes for Member</common:AnnotationType>
+          </common:Annotation>
+        </structure:Annotations>
+      </structure:Code>
+      <structure:Annotations>
+        <common:Annotation>
+          <common:AnnotationTitle>2</common:AnnotationTitle>
+          <common:AnnotationType>Footnote for Dimension</common:AnnotationType>
+        </common:Annotation>
+      </structure:Annotations>
+    </structure:CodeList>
+    <structure:CodeList xmlns:structure="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/structure" id="CL_UNIONCOVERAGE" version="1.0" isFinal="false">
+      <structure:Name xml:lang="en">Union coverage</structure:Name>
+      <structure:Name xml:lang="fr">Couverture syndicale</structure:Name>
+      <structure:Code value="1">
+        <structure:Description xml:lang="en">Total employees, covered and not covered by union</structure:Description>
+        <structure:Description xml:lang="fr">Total des employés, couverts et non couverts par un syndicat</structure:Description>
+      </structure:Code>
+      <structure:Code value="2">
+        <structure:Description xml:lang="en">Union coverage</structure:Description>
+        <structure:Description xml:lang="fr">Couverts par un syndicat</structure:Description>
+        <structure:Annotations>
+          <common:Annotation>
+            <common:AnnotationTitle>5</common:AnnotationTitle>
+            <common:AnnotationType>Footnotes for Member</common:AnnotationType>
+          </common:Annotation>
+        </structure:Annotations>
+      </structure:Code>
+      <structure:Code value="3">
+        <structure:Description xml:lang="en">No union coverage</structure:Description>
+        <structure:Description xml:lang="fr">Non couverts par un syndicat</structure:Description>
+        <structure:Annotations>
+          <common:Annotation>
+            <common:AnnotationTitle>6</common:AnnotationTitle>
+            <common:AnnotationType>Footnotes for Member</common:AnnotationType>
+          </common:Annotation>
+        </structure:Annotations>
+      </structure:Code>
+    </structure:CodeList>
+    <structure:CodeList xmlns:structure="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/structure" id="CL_SEX" version="1.0" isFinal="false">
+      <structure:Name xml:lang="en">Sex</structure:Name>
+      <structure:Name xml:lang="fr">Sexe</structure:Name>
+      <structure:Code value="1">
+        <structure:Description xml:lang="en">Both sexes</structure:Description>
+        <structure:Description xml:lang="fr">Les deux sexes</structure:Description>
+      </structure:Code>
+      <structure:Code value="2">
+        <structure:Description xml:lang="en">Males</structure:Description>
+        <structure:Description xml:lang="fr">Hommes</structure:Description>
+      </structure:Code>
+      <structure:Code value="3">
+        <structure:Description xml:lang="en">Females</structure:Description>
+        <structure:Description xml:lang="fr">Femmes</structure:Description>
+      </structure:Code>
+    </structure:CodeList>
+    <structure:CodeList xmlns:structure="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/structure" id="CL_AGEGROUP" version="1.0" isFinal="false">
+      <structure:Name xml:lang="en">Age group</structure:Name>
+      <structure:Name xml:lang="fr">Groupe d'âge</structure:Name>
+      <structure:Code value="1">
+        <structure:Description xml:lang="en">15 years and over</structure:Description>
+        <structure:Description xml:lang="fr">15 ans et plus</structure:Description>
+      </structure:Code>
+      <structure:Code value="2">
+        <structure:Description xml:lang="en">15 to 24 years</structure:Description>
+        <structure:Description xml:lang="fr">15 à 24 ans</structure:Description>
+      </structure:Code>
+      <structure:Code value="3">
+        <structure:Description xml:lang="en">25 to 54 years</structure:Description>
+        <structure:Description xml:lang="fr">25 à 54 ans</structure:Description>
+      </structure:Code>
+      <structure:Code value="4">
+        <structure:Description xml:lang="en">55 years and over</structure:Description>
+        <structure:Description xml:lang="fr">55 ans et plus</structure:Description>
+      </structure:Code>
+    </structure:CodeList>
+    <structure:CodeList xmlns:structure="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/structure" id="CL_STC_UNIT" agencyID="STATCAN" version="1.0" isFinal="false">
+      <structure:Code value="1">
+        <structure:Description xml:lang="en">current dollars</structure:Description>
+        <structure:Description xml:lang="fr">dollars courants</structure:Description>
+      </structure:Code>
+      <structure:Code value="2">
+        <structure:Description xml:lang="en">Persons</structure:Description>
+        <structure:Description xml:lang="fr">Personnes</structure:Description>
+      </structure:Code>
+    </structure:CodeList>
+    <structure:CodeList xmlns:structure="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/structure" id="CL_UNIT_MULT" agencyID="STATCAN" version="1.0" isFinal="false">
+      <structure:Code value="3">
+        <structure:Description xml:lang="en">1,000</structure:Description>
+        <structure:Description xml:lang="fr">1 000</structure:Description>
+      </structure:Code>
+    </structure:CodeList>
+    <structure:CodeList xmlns:structure="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/structure" id="CL_OBS_SYMBOL" agencyID="STATCAN" version="1.0" isFinal="false">
+      <structure:Code value="1">
+        <structure:Description xml:lang="en">p = Preliminary</structure:Description>
+        <structure:Description xml:lang="fr">p = Donnée provisoire</structure:Description>
+      </structure:Code>
+      <structure:Code value="3">
+        <structure:Description xml:lang="en">r = Revised</structure:Description>
+        <structure:Description xml:lang="fr">r = Donnée rectifiée</structure:Description>
+      </structure:Code>
+      <structure:Code value="4">
+        <structure:Description xml:lang="en">... = Not applicable</structure:Description>
+        <structure:Description xml:lang="fr">... = N''ayant pas lieu de figurer</structure:Description>
+      </structure:Code>
+    </structure:CodeList>
+    <structure:CodeList xmlns:structure="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/structure" id="CL_OBS_STATUS" agencyID="STATCAN" version="1.0" isFinal="false">
+      <structure:Code value="1">
+        <structure:Description xml:lang="en">.. = Not available for a specific reference period</structure:Description>
+        <structure:Description xml:lang="fr">.. = Indisponible pour une période de référence précise</structure:Description>
+      </structure:Code>
+      <structure:Code value="2">
+        <structure:Description xml:lang="en">0 = Data rounded to 0</structure:Description>
+        <structure:Description xml:lang="fr">0 = Valeur arrondie à 0</structure:Description>
+      </structure:Code>
+      <structure:Code value="3">
+        <structure:Description xml:lang="en">A = Excellent</structure:Description>
+        <structure:Description xml:lang="fr">A = Excellent</structure:Description>
+      </structure:Code>
+      <structure:Code value="4">
+        <structure:Description xml:lang="en">B = Very good</structure:Description>
+        <structure:Description xml:lang="fr">B = Très bon</structure:Description>
+      </structure:Code>
+      <structure:Code value="5">
+        <structure:Description xml:lang="en">C = Good</structure:Description>
+        <structure:Description xml:lang="fr">C = Bon</structure:Description>
+      </structure:Code>
+      <structure:Code value="6">
+        <structure:Description xml:lang="en">D = Acceptable</structure:Description>
+        <structure:Description xml:lang="fr">D = Passable</structure:Description>
+      </structure:Code>
+      <structure:Code value="7">
+        <structure:Description xml:lang="en">E = Poor,Use with caution</structure:Description>
+        <structure:Description xml:lang="fr">E = Médiocre,Utiliser avec prudence</structure:Description>
+      </structure:Code>
+      <structure:Code value="8">
+        <structure:Description xml:lang="en">F = Too unreliable to be published</structure:Description>
+        <structure:Description xml:lang="fr">F = Trop peu fiable pour être publiée</structure:Description>
+      </structure:Code>
+    </structure:CodeList>
+    <structure:CodeList xmlns:structure="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/structure" id="CL_OBS_CONF" agencyID="STATCAN" version="1.0" isFinal="false">
+      <structure:Code value="1">
+        <structure:Description xml:lang="en">x = Suppressed to meet the confidentiality requirements of the Statistics Act</structure:Description>
+        <structure:Description xml:lang="fr">x = Confidentiel en vertu des dispositions de la Loi sur la statistique</structure:Description>
+      </structure:Code>
+      <structure:Code value="2">
+        <structure:Description xml:lang="en">x = Suppressed to meet the confidentiality requirements of the Statistics Act</structure:Description>
+        <structure:Description xml:lang="fr">x = Confidentiel en vertu des dispositions de la Loi sur la statistique</structure:Description>
+      </structure:Code>
+    </structure:CodeList>
+  </CodeLists>
+  <Concepts>
+    <structure:Concept xmlns:structure="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/structure" id="GEOGRAPHY">
+      <structure:Name xml:lang="en">Geography</structure:Name>
+      <structure:Name xml:lang="fr">Géographie</structure:Name>
+    </structure:Concept>
+    <structure:Concept xmlns:structure="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/structure" id="WAGES">
+      <structure:Name xml:lang="en">Wages</structure:Name>
+      <structure:Name xml:lang="fr">Salaire</structure:Name>
+    </structure:Concept>
+    <structure:Concept xmlns:structure="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/structure" id="JOBPERMANENCE">
+      <structure:Name xml:lang="en">Job permanence</structure:Name>
+      <structure:Name xml:lang="fr">Permanence de l'emploi</structure:Name>
+    </structure:Concept>
+    <structure:Concept xmlns:structure="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/structure" id="UNIONCOVERAGE">
+      <structure:Name xml:lang="en">Union coverage</structure:Name>
+      <structure:Name xml:lang="fr">Couverture syndicale</structure:Name>
+    </structure:Concept>
+    <structure:Concept xmlns:structure="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/structure" id="SEX">
+      <structure:Name xml:lang="en">Sex</structure:Name>
+      <structure:Name xml:lang="fr">Sexe</structure:Name>
+    </structure:Concept>
+    <structure:Concept xmlns:structure="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/structure" id="AGEGROUP">
+      <structure:Name xml:lang="en">Age group</structure:Name>
+      <structure:Name xml:lang="fr">Groupe d'âge</structure:Name>
+    </structure:Concept>
+    <structure:Concept xmlns:structure="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/structure" id="TIME_PERIOD">
+      <structure:Name xml:lang="en">Time</structure:Name>
+      <structure:Name xml:lang="fr">Temps</structure:Name>
+    </structure:Concept>
+    <structure:Concept xmlns:structure="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/structure" id="OBS_VALUE">
+      <structure:Name xml:lang="en">Observation Value</structure:Name>
+      <structure:Name xml:lang="fr">Valeur d'observation</structure:Name>
+    </structure:Concept>
+    <structure:Concept xmlns:structure="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/structure" id="OBS_SYMBOL">
+      <structure:Name xml:lang="en">Observation Symbol</structure:Name>
+      <structure:Name xml:lang="fr">Symbol d'observation</structure:Name>
+    </structure:Concept>
+    <structure:Concept xmlns:structure="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/structure" id="OBS_STATUS">
+      <structure:Name xml:lang="en">Observation Status</structure:Name>
+      <structure:Name xml:lang="fr">Observation Status</structure:Name>
+    </structure:Concept>
+    <structure:Concept xmlns:structure="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/structure" id="OBS_CONF">
+      <structure:Name xml:lang="en">Observation Confidentiality</structure:Name>
+      <structure:Name xml:lang="fr">Confidentiel d'observation</structure:Name>
+    </structure:Concept>
+    <structure:Concept xmlns:structure="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/structure" id="STC_UNIT">
+      <structure:Name xml:lang="en">Unit</structure:Name>
+      <structure:Name xml:lang="fr">Unité</structure:Name>
+    </structure:Concept>
+    <structure:Concept xmlns:structure="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/structure" id="UNIT_MULT">
+      <structure:Name xml:lang="en">Unit multplier</structure:Name>
+      <structure:Name xml:lang="fr">Unité multiplicateur</structure:Name>
+    </structure:Concept>
+    <structure:Concept xmlns:structure="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/structure" id="FOOTNOTE_REF">
+      <structure:Name xml:lang="en">Footnote reference for observation</structure:Name>
+      <structure:Name xml:lang="fr">référence de la note de renvoie d’observation</structure:Name>
+    </structure:Concept>
+    <structure:Concept xmlns:structure="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/structure" id="TERMINATED">
+      <structure:Name xml:lang="en">Terminated</structure:Name>
+      <structure:Name xml:lang="fr">terminé</structure:Name>
+    </structure:Concept>
+  </Concepts>
+  <KeyFamilies>
+    <structure:KeyFamily xmlns:structure="http://www.SDMX.org/resources/SDMXML/schemas/v2_0/structure" version="1.0" isFinal="false">
+      <structure:Components>
+        <structure:Dimension conceptRef="GEOGRAPHY" codelist="CL_GEOGRAPHY" />
+        <structure:Dimension conceptRef="WAGES" codelist="CL_WAGES" />
+        <structure:Dimension conceptRef="JOBPERMANENCE" codelist="CL_JOBPERMANENCE" />
+        <structure:Dimension conceptRef="UNIONCOVERAGE" codelist="CL_UNIONCOVERAGE" />
+        <structure:Dimension conceptRef="SEX" codelist="CL_SEX" />
+        <structure:Dimension conceptRef="AGEGROUP" codelist="CL_AGEGROUP" />
+        <structure:TimeDimension conceptRef="TIME_PERIOD" />
+        <structure:PrimaryMeasure conceptRef="OBS_VALUE" />
+        <structure:Attribute conceptRef="OBS_SYMBOL" codelist="CL_OBS_SYMBOL" attachmentLevel="Observation" assignmentStatus="Conditional" />
+        <structure:Attribute conceptRef="OBS_STATUS" codelist="CL_OBS_STATUS" attachmentLevel="Observation" assignmentStatus="Conditional" />
+        <structure:Attribute conceptRef="OBS_CONF" codelist="CL_OBS_CONF" attachmentLevel="Observation" assignmentStatus="Conditional" />
+        <structure:Attribute conceptRef="FOOTNOTE_REF" attachmentLevel="Observation" assignmentStatus="Conditional" />
+        <structure:Attribute conceptRef="TERMINATED" attachmentLevel="Observation" assignmentStatus="Conditional" />
+        <structure:Attribute conceptRef="STC_UNIT" codelist="CL_STC_UNIT" attachmentLevel="Series" assignmentStatus="Conditional" />
+        <structure:Attribute conceptRef="UNIT_MULT" codelist="CL_UNIT_MULT" attachmentLevel="Series" assignmentStatus="Conditional" />
+        <structure:Attribute conceptRef="DECIMALS" attachmentLevel="Series" assignmentStatus="Conditional" />
+      </structure:Components>
+      <structure:Annotations>
+        <common:Annotation>
+          <common:AnnotationTitle>1</common:AnnotationTitle>
+          <common:AnnotationType>Footnotes</common:AnnotationType>
+          <common:AnnotationText xml:lang="en">Beginning January 1997, information is collected on the usual wages or salary of employees at their main job. Respondents are asked to report their wage/salary before taxes and other deductions, and include tips, commissions and bonuses. Weekly and hourly wages/salary are calculated in conjunction with usual paid work hours per week.</common:AnnotationText>
+          <common:AnnotationText xml:lang="fr">Depuis janvier 1997, des renseignements sont recueillis sur le salaire ou traitement habituel des employés à leur emploi principal. On demande aux enquêtés de déclarer leur salaire ou traitement, y compris les pourboires, les commissions et les primes, avant impôt et autres déductions. Les salaires ou traitements hebdomadaires ou horaires sont calculés conjointement avec les heures de travail par semaine habituellement payées.</common:AnnotationText>
+        </common:Annotation>
+        <common:Annotation>
+          <common:AnnotationTitle>2</common:AnnotationTitle>
+          <common:AnnotationType>Footnotes</common:AnnotationType>
+          <common:AnnotationText xml:lang="en">Beginning January 1997, information is collected to allow the classification of paid jobs as either permanent or temporary. This classification is based on the intentions of the employer, and characteristics of the job, rather than the intentions of the employee. If a job that was formerly considered permanent is ending in the near future because of downsizing or closure, it is still regarded as permanent.</common:AnnotationText>
+          <common:AnnotationText xml:lang="fr">Depuis janvier 1997, on recueille des renseignements permettant de diviser les emplois rémunérés en deux catégories : emplois permanents et emplois temporaires. Cette classification dépend des intentions de l'employeur et des caractéristiques de l'emploi plutôt que des intentions de l'employé. Si un emploi qui était officiellement considéré comme permanent doit prendre fin sous peu du fait de compressions de personnel ou de la fermeture de l'entreprise, l'emploi est toujours considéré comme étant permanent.</common:AnnotationText>
+        </common:Annotation>
+        <common:Annotation>
+          <common:AnnotationTitle>3</common:AnnotationTitle>
+          <common:AnnotationType>Footnotes</common:AnnotationType>
+          <common:AnnotationText xml:lang="en">A permanent job is one that is expected to last as long as the employee wants it, given that business conditions permit. That is, there is no pre-determined termination date.</common:AnnotationText>
+          <common:AnnotationText xml:lang="fr">Un emploi permanent est un emploi qui devrait durer aussi longtemps que l'employé le désire, à la condition que la conjoncture économique le permette; c'est-à-dire que la date de cessation de l'emploi n'est pas déterminée à l'avance.</common:AnnotationText>
+        </common:Annotation>
+        <common:Annotation>
+          <common:AnnotationTitle>4</common:AnnotationTitle>
+          <common:AnnotationType>Footnotes</common:AnnotationType>
+          <common:AnnotationText xml:lang="en">A temporary job has a predetermined end date, or will end as soon as a specified project is completed. Includes seasonal jobs; temporary, term or contract jobs including work done through a temporary help agency; casual jobs; and other temporary work.</common:AnnotationText>
+          <common:AnnotationText xml:lang="fr">Un emploi temporaire est un emploi dont la date de cessation est prédéterminée ou qui se terminera dès qu'un projet déterminé aura pris fin. Comprend les emplois saisonniers, les emplois temporaires (c'est-à-dire pour une durée déterminée ou dans le cadre d'un contrat de travail, y compris le travail effectué par le biais d'une agence de placement), les emplois occasionnels et les autres emplois temporaires.</common:AnnotationText>
+        </common:Annotation>
+        <common:Annotation>
+          <common:AnnotationTitle>5</common:AnnotationTitle>
+          <common:AnnotationType>Footnotes</common:AnnotationType>
+          <common:AnnotationText xml:lang="en">Employees who are members of a union and employees who are not union members but who are covered by a collective agreement or a union contract.</common:AnnotationText>
+          <common:AnnotationText xml:lang="fr">Comprend les employés qui sont membres d'un syndicat et ceux qui ne pas membres, mais sont couverts par une convention collective ou par un contrat de travail négocié par un syndicat.</common:AnnotationText>
+        </common:Annotation>
+        <common:Annotation>
+          <common:AnnotationTitle>6</common:AnnotationTitle>
+          <common:AnnotationType>Footnotes</common:AnnotationType>
+          <common:AnnotationText xml:lang="en">Employees who are not members of a union or not covered by a collective agreement or a union contract.</common:AnnotationText>
+          <common:AnnotationText xml:lang="fr">Comprend les employés qui ne sont pas membres d'un syndicat et qui ne sont pas couverts par une convention collective ou par un contrat de travail négocié par un syndicat.</common:AnnotationText>
+        </common:Annotation>
+        <common:Annotation>
+          <common:AnnotationTitle>7</common:AnnotationTitle>
+          <common:AnnotationType>Footnotes</common:AnnotationType>
+          <common:AnnotationText xml:lang="en">The Labour force survey collection of tables, starting with number 282-, is large with many possible cross-tabulations for the 10 provinces and other geographic regions. To ensure respondent's confidentiality, detailed data are suppressed. Data for Canada, Quebec, Ontario, Alberta and British Columbia are suppressed if the estimate is below 1,500, for Newfoundland and Labrador, Nova Scotia, New Brunswick, Manitoba and Saskatchewan, if the estimate is below 500, and for Prince Edward Island, under 200. For suppression levels within census metropolitan areas (CMAs) and economic regions (ERs), use the respective provincial suppression levels above. While suppressing to protect respondent confidentiality has the added effect of blocking-out the lowest-quality LFS data, some remaining non-suppressed data in these very large LFS CANSIM tables may be of insufficient quality to allow for accurate interpretation. Please be warned that the more detailed your LFS CANSIM download, the smaller the sample size upon which your LFS estimates will be based, and the greater the risk of downloading poorer quality data.</common:AnnotationText>
+          <common:AnnotationText xml:lang="fr">La collection de tableaux de l'Enquête sur la population active, débutant par le numéro 282-, est vaste et permet de nombreux recoupements pour les 10 provinces et d'autres régions géographiques. Pour assurer la confidentialité du répondant, des données détaillées ont été supprimées de ces tableaux. Ainsi, les données ont été supprimées lorsque l'estimation était inférieure à 1 500 pour le Canada, le Québec, l'Ontario, l'Alberta et la Colombie-Britannique, à 500 pour Terre-Neuve, le Labrador, la Nouvelle-Écosse, le Nouveau-Brunswick, le Manitoba et la Saskatchewan, et à 200 pour l'Île-du-Prince-Édouard. Pour connaître le niveau de suppression appliqué aux régions métropolitaines de recensement (RMR) et aux régions économiques (RE), reportez-vous aux niveaux de leurs provinces respectives mentionnés ci-dessus. Alors que la suppression visant la protection de la confidentialité du répondant élimine du même coup les données de moindre qualité de l'EPA, certaines des données qui demeurent dans ces très grands tableaux CANSIM de l'EPA risquent d'être d'une qualité ne permettant pas de les interpréter avec exactitude. Au moment de télécharger des tableaux CANSIM de l'EPA, vous devez savoir que plus ces tableaux seront détaillés, plus petit sera l'échantillon sur lequel vos estimations de l'EPA se baseront et plus vous risquerez de télécharger des données de moindre qualité.</common:AnnotationText>
+        </common:Annotation>
+      </structure:Annotations>
+    </structure:KeyFamily>
+  </KeyFamilies>
+</Structure>
+
