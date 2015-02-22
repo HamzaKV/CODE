@@ -1,7 +1,11 @@
 <?php
 
 ?>
-
+<style>
+    #padlink{
+        color: #fff;
+    }
+</style>
 <div style="height: 100px; background-color: #373D33; color: #fff;">
     <div style="width: 60%; margin-left: auto; margin-right: auto">
         <div style="float: left">
