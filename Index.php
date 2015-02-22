@@ -11,6 +11,9 @@
         <script type="text/javascript" src="JS/Script.js"></script>
         <style>
             body{margin: 0;}
+            a{text-decoration: underline;}
+            #padlink{
+    color: #fff;}
         </style>
     </head>
     <body style="background-color: #B9BAB8;" ondragstart="return false" >
